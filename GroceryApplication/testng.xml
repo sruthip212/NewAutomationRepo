@@ -1,0 +1,20 @@
+<suite name="My suite">
+	<test name="my test">
+		<parameter name="browser" value="chrome"></parameter>
+		<listeners>
+		<listener class-name="listeners.Listeners"></listener>
+		<listener class-name="listeners.RetryListener"></listener>
+		</listeners>
+		
+		<classes>
+
+			<class name="testscripts.LoginTest.java">
+				<methods>
+					<include name="verifyLoginWithValidCredentials"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite>
